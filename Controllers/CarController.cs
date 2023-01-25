@@ -102,6 +102,8 @@ namespace Car_Rental_System.Controllers
 
                 obj.ImageUrl = path;
             }
+                
+            
             _db.Cars.Update(obj);
             _db.SaveChanges();
             return RedirectToAction("Index");
